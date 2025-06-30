@@ -1,0 +1,109 @@
+The target system is: Emscripten - 1 - x86
+The host system is: Linux - 6.8.0-60-generic - x86_64
+Performing C++ SOURCE FILE Test HAVE_STDATOMIC succeeded with the following output:
+Change Dir: /home/aye/cost/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a3309/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a3309.dir/build.make CMakeFiles/cmTC_a3309.dir/build
+gmake[1]: Entering directory '/home/aye/cost/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a3309.dir/src.cxx.o
+/home/aye/dev/emsdk/upstream/emscripten/em++ -DHAVE_STDATOMIC  -std=gnu++17 -MD -MT CMakeFiles/cmTC_a3309.dir/src.cxx.o -MF CMakeFiles/cmTC_a3309.dir/src.cxx.o.d -o CMakeFiles/cmTC_a3309.dir/src.cxx.o -c /home/aye/cost/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_a3309.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a3309.dir/link.txt --verbose=1
+/home/aye/dev/emsdk/upstream/emscripten/em++ @CMakeFiles/cmTC_a3309.dir/objects1.rsp -o cmTC_a3309.js 
+gmake[1]: Leaving directory '/home/aye/cost/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <atomic>
+#include <cstdint>
+
+int main(int, char **)
+{
+    volatile std::atomic<char>    size_1;
+    volatile std::atomic<short>   size_2;
+    volatile std::atomic<int>     size_4;
+    volatile std::atomic<int64_t> size_8;
+
+    ++size_1;
+    ++size_2;
+    ++size_4;
+    ++size_8;
+
+    (void)size_1.load(std::memory_order_relaxed);
+    (void)size_2.load(std::memory_order_relaxed);
+    (void)size_4.load(std::memory_order_relaxed);
+    (void)size_8.load(std::memory_order_relaxed);
+
+    return 0;
+}
+Performing C++ SOURCE FILE Test HAVE_GETTIME succeeded with the following output:
+Change Dir: /home/aye/cost/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6d93d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6d93d.dir/build.make CMakeFiles/cmTC_6d93d.dir/build
+gmake[1]: Entering directory '/home/aye/cost/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_6d93d.dir/src.cxx.o
+/home/aye/dev/emsdk/upstream/emscripten/em++ -DHAVE_GETTIME  -std=gnu++17 -MD -MT CMakeFiles/cmTC_6d93d.dir/src.cxx.o -MF CMakeFiles/cmTC_6d93d.dir/src.cxx.o.d -o CMakeFiles/cmTC_6d93d.dir/src.cxx.o -c /home/aye/cost/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_6d93d.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6d93d.dir/link.txt --verbose=1
+/home/aye/dev/emsdk/upstream/emscripten/em++ @CMakeFiles/cmTC_6d93d.dir/objects1.rsp -o cmTC_6d93d.js 
+gmake[1]: Leaving directory '/home/aye/cost/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <time.h>
+#include <unistd.h>
+
+int main(int, char **) {
+    struct timespec ts;
+    clock_gettime(CLOCK_REALTIME, &ts);
+    return 0;
+}
+
+Performing C++ SOURCE FILE Test HAVE_SHM_OPEN_SHM_UNLINK succeeded with the following output:
+Change Dir: /home/aye/cost/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b5afd/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b5afd.dir/build.make CMakeFiles/cmTC_b5afd.dir/build
+gmake[1]: Entering directory '/home/aye/cost/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b5afd.dir/src.cxx.o
+/home/aye/dev/emsdk/upstream/emscripten/em++ -DHAVE_SHM_OPEN_SHM_UNLINK  -std=gnu++17 -MD -MT CMakeFiles/cmTC_b5afd.dir/src.cxx.o -MF CMakeFiles/cmTC_b5afd.dir/src.cxx.o.d -o CMakeFiles/cmTC_b5afd.dir/src.cxx.o -c /home/aye/cost/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_b5afd.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b5afd.dir/link.txt --verbose=1
+/home/aye/dev/emsdk/upstream/emscripten/em++ @CMakeFiles/cmTC_b5afd.dir/objects1.rsp -o cmTC_b5afd.js 
+gmake[1]: Leaving directory '/home/aye/cost/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <sys/types.h>
+#include <sys/mman.h>
+#include <fcntl.h>
+
+int main(int, char **) {
+    shm_open("test", O_RDWR | O_CREAT | O_EXCL, 0666);
+    shm_unlink("test");
+    return 0;
+}
+
+Performing C++ SOURCE FILE Test HAVE_EGL succeeded with the following output:
+Change Dir: /home/aye/cost/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b8dfb/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b8dfb.dir/build.make CMakeFiles/cmTC_b8dfb.dir/build
+gmake[1]: Entering directory '/home/aye/cost/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b8dfb.dir/src.cxx.o
+/home/aye/dev/emsdk/upstream/emscripten/em++ -DHAVE_EGL  -std=gnu++17 -MD -MT CMakeFiles/cmTC_b8dfb.dir/src.cxx.o -MF CMakeFiles/cmTC_b8dfb.dir/src.cxx.o.d -o CMakeFiles/cmTC_b8dfb.dir/src.cxx.o -c /home/aye/cost/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_b8dfb.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b8dfb.dir/link.txt --verbose=1
+/home/aye/dev/emsdk/upstream/emscripten/em++ @CMakeFiles/cmTC_b8dfb.dir/objects1.rsp -o cmTC_b8dfb.js 
+gmake[1]: Leaving directory '/home/aye/cost/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <EGL/egl.h>
+
+int main(int, char **) {
+    [[maybe_unused]] EGLint x = 0;
+    EGLDisplay dpy = 0; EGLContext ctx = 0;
+    eglDestroyContext(dpy, ctx);
+}
