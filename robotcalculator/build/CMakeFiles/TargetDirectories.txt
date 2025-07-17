@@ -1,0 +1,8 @@
+/home/aye/qt/simpletop/build/CMakeFiles/simpletop.dir
+/home/aye/qt/simpletop/build/CMakeFiles/edit_cache.dir
+/home/aye/qt/simpletop/build/CMakeFiles/rebuild_cache.dir
+/home/aye/qt/simpletop/build/CMakeFiles/list_install_components.dir
+/home/aye/qt/simpletop/build/CMakeFiles/install.dir
+/home/aye/qt/simpletop/build/CMakeFiles/install/local.dir
+/home/aye/qt/simpletop/build/CMakeFiles/install/strip.dir
+/home/aye/qt/simpletop/build/CMakeFiles/simpletop_autogen.dir
