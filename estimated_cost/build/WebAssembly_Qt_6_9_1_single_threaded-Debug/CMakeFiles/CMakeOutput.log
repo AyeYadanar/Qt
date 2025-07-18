@@ -1,0 +1,109 @@
+The target system is: Emscripten - 1 - x86
+The host system is: Linux - 6.8.0-60-generic - x86_64
+Performing C++ SOURCE FILE Test HAVE_STDATOMIC succeeded with the following output:
+Change Dir: /home/aye/qt/estimated_cost/build/WebAssembly_Qt_6_9_1_single_threaded-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_61d1c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_61d1c.dir/build.make CMakeFiles/cmTC_61d1c.dir/build
+gmake[1]: Entering directory '/home/aye/qt/estimated_cost/build/WebAssembly_Qt_6_9_1_single_threaded-Debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_61d1c.dir/src.cxx.o
+/home/aye/dev/emsdk/upstream/emscripten/em++ -DHAVE_STDATOMIC  -DQT_QML_DEBUG  -std=gnu++17 -MD -MT CMakeFiles/cmTC_61d1c.dir/src.cxx.o -MF CMakeFiles/cmTC_61d1c.dir/src.cxx.o.d -o CMakeFiles/cmTC_61d1c.dir/src.cxx.o -c /home/aye/qt/estimated_cost/build/WebAssembly_Qt_6_9_1_single_threaded-Debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_61d1c.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_61d1c.dir/link.txt --verbose=1
+/home/aye/dev/emsdk/upstream/emscripten/em++ -DQT_QML_DEBUG  @CMakeFiles/cmTC_61d1c.dir/objects1.rsp -o cmTC_61d1c.js 
+gmake[1]: Leaving directory '/home/aye/qt/estimated_cost/build/WebAssembly_Qt_6_9_1_single_threaded-Debug/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <atomic>
+#include <cstdint>
+
+int main(int, char **)
+{
+    volatile std::atomic<char>    size_1;
+    volatile std::atomic<short>   size_2;
+    volatile std::atomic<int>     size_4;
+    volatile std::atomic<int64_t> size_8;
+
+    ++size_1;
+    ++size_2;
+    ++size_4;
+    ++size_8;
+
+    (void)size_1.load(std::memory_order_relaxed);
+    (void)size_2.load(std::memory_order_relaxed);
+    (void)size_4.load(std::memory_order_relaxed);
+    (void)size_8.load(std::memory_order_relaxed);
+
+    return 0;
+}
+Performing C++ SOURCE FILE Test HAVE_GETTIME succeeded with the following output:
+Change Dir: /home/aye/qt/estimated_cost/build/WebAssembly_Qt_6_9_1_single_threaded-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_83c98/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_83c98.dir/build.make CMakeFiles/cmTC_83c98.dir/build
+gmake[1]: Entering directory '/home/aye/qt/estimated_cost/build/WebAssembly_Qt_6_9_1_single_threaded-Debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_83c98.dir/src.cxx.o
+/home/aye/dev/emsdk/upstream/emscripten/em++ -DHAVE_GETTIME  -DQT_QML_DEBUG  -std=gnu++17 -MD -MT CMakeFiles/cmTC_83c98.dir/src.cxx.o -MF CMakeFiles/cmTC_83c98.dir/src.cxx.o.d -o CMakeFiles/cmTC_83c98.dir/src.cxx.o -c /home/aye/qt/estimated_cost/build/WebAssembly_Qt_6_9_1_single_threaded-Debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_83c98.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_83c98.dir/link.txt --verbose=1
+/home/aye/dev/emsdk/upstream/emscripten/em++ -DQT_QML_DEBUG  @CMakeFiles/cmTC_83c98.dir/objects1.rsp -o cmTC_83c98.js 
+gmake[1]: Leaving directory '/home/aye/qt/estimated_cost/build/WebAssembly_Qt_6_9_1_single_threaded-Debug/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <time.h>
+#include <unistd.h>
+
+int main(int, char **) {
+    struct timespec ts;
+    clock_gettime(CLOCK_REALTIME, &ts);
+    return 0;
+}
+
+Performing C++ SOURCE FILE Test HAVE_SHM_OPEN_SHM_UNLINK succeeded with the following output:
+Change Dir: /home/aye/qt/estimated_cost/build/WebAssembly_Qt_6_9_1_single_threaded-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ed276/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ed276.dir/build.make CMakeFiles/cmTC_ed276.dir/build
+gmake[1]: Entering directory '/home/aye/qt/estimated_cost/build/WebAssembly_Qt_6_9_1_single_threaded-Debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ed276.dir/src.cxx.o
+/home/aye/dev/emsdk/upstream/emscripten/em++ -DHAVE_SHM_OPEN_SHM_UNLINK  -DQT_QML_DEBUG  -std=gnu++17 -MD -MT CMakeFiles/cmTC_ed276.dir/src.cxx.o -MF CMakeFiles/cmTC_ed276.dir/src.cxx.o.d -o CMakeFiles/cmTC_ed276.dir/src.cxx.o -c /home/aye/qt/estimated_cost/build/WebAssembly_Qt_6_9_1_single_threaded-Debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_ed276.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed276.dir/link.txt --verbose=1
+/home/aye/dev/emsdk/upstream/emscripten/em++ -DQT_QML_DEBUG  @CMakeFiles/cmTC_ed276.dir/objects1.rsp -o cmTC_ed276.js 
+gmake[1]: Leaving directory '/home/aye/qt/estimated_cost/build/WebAssembly_Qt_6_9_1_single_threaded-Debug/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <sys/types.h>
+#include <sys/mman.h>
+#include <fcntl.h>
+
+int main(int, char **) {
+    shm_open("test", O_RDWR | O_CREAT | O_EXCL, 0666);
+    shm_unlink("test");
+    return 0;
+}
+
+Performing C++ SOURCE FILE Test HAVE_EGL succeeded with the following output:
+Change Dir: /home/aye/qt/estimated_cost/build/WebAssembly_Qt_6_9_1_single_threaded-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c1e99/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c1e99.dir/build.make CMakeFiles/cmTC_c1e99.dir/build
+gmake[1]: Entering directory '/home/aye/qt/estimated_cost/build/WebAssembly_Qt_6_9_1_single_threaded-Debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c1e99.dir/src.cxx.o
+/home/aye/dev/emsdk/upstream/emscripten/em++ -DHAVE_EGL  -DQT_QML_DEBUG  -std=gnu++17 -MD -MT CMakeFiles/cmTC_c1e99.dir/src.cxx.o -MF CMakeFiles/cmTC_c1e99.dir/src.cxx.o.d -o CMakeFiles/cmTC_c1e99.dir/src.cxx.o -c /home/aye/qt/estimated_cost/build/WebAssembly_Qt_6_9_1_single_threaded-Debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_c1e99.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c1e99.dir/link.txt --verbose=1
+/home/aye/dev/emsdk/upstream/emscripten/em++ -DQT_QML_DEBUG  @CMakeFiles/cmTC_c1e99.dir/objects1.rsp -o cmTC_c1e99.js 
+gmake[1]: Leaving directory '/home/aye/qt/estimated_cost/build/WebAssembly_Qt_6_9_1_single_threaded-Debug/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <EGL/egl.h>
+
+int main(int, char **) {
+    [[maybe_unused]] EGLint x = 0;
+    EGLDisplay dpy = 0; EGLContext ctx = 0;
+    eglDestroyContext(dpy, ctx);
+}

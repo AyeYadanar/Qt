@@ -1,0 +1,8 @@
+/home/aye/qt/estimated_cost/build/CMakeFiles/estimated_cost.dir
+/home/aye/qt/estimated_cost/build/CMakeFiles/edit_cache.dir
+/home/aye/qt/estimated_cost/build/CMakeFiles/rebuild_cache.dir
+/home/aye/qt/estimated_cost/build/CMakeFiles/list_install_components.dir
+/home/aye/qt/estimated_cost/build/CMakeFiles/install.dir
+/home/aye/qt/estimated_cost/build/CMakeFiles/install/local.dir
+/home/aye/qt/estimated_cost/build/CMakeFiles/install/strip.dir
+/home/aye/qt/estimated_cost/build/CMakeFiles/estimated_cost_autogen.dir

@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_estimated_cost_FILE /home/aye/qt/estimated_cost/build/WebAssembly_Qt_6_9_1_single_threaded-Debug/estimated_cost.js)
+set(__QT_DEPLOY_TARGET_estimated_cost_TYPE EXECUTABLE)
