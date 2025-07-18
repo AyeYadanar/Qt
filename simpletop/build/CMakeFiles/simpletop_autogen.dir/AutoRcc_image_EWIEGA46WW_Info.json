@@ -1,0 +1,23 @@
+{
+	"BUILD_DIR" : "/home/aye/qt/simpletop/build/simpletop_autogen",
+	"CMAKE_BINARY_DIR" : "/home/aye/qt/simpletop/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/aye/qt/simpletop/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/aye/qt/simpletop",
+	"CMAKE_SOURCE_DIR" : "/home/aye/qt/simpletop",
+	"INCLUDE_DIR" : "/home/aye/qt/simpletop/build/simpletop_autogen/include",
+	"INPUTS" : 
+	[
+		"/home/aye/qt/simpletop/images/back.jpg",
+		"/home/aye/qt/simpletop/images/logo.jpg"
+	],
+	"LOCK_FILE" : "/home/aye/qt/simpletop/build/CMakeFiles/simpletop_autogen.dir/AutoRcc_image_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "image" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_image.cpp",
+	"RCC_EXECUTABLE" : "/usr/lib/qt5/bin/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/home/aye/qt/simpletop/build/CMakeFiles/simpletop_autogen.dir/AutoRcc_image_EWIEGA46WW_Used.txt",
+	"SOURCE" : "/home/aye/qt/simpletop/image.qrc",
+	"VERBOSITY" : 0
+}
