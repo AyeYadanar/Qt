@@ -9,7 +9,8 @@ SecDialog::SecDialog(QMainWindow *mainWin,QWidget *parent)
     ,mainWindow(mainWin)
 {
     ui->setupUi(this);
-     connect(ui->homePushButton, &QPushButton::clicked, this, &SecDialog::on_homePushButton_clicked);
+    connect(ui->homePushButton, &QPushButton::clicked, this, &SecDialog::on_homePushButton_clicked);
+
      ui->label_8->setText("Actual RPM to  Actual Robot velocity ");
      ui->label->setText("RPM left");
      ui->label_2->setText("RPM Right");
@@ -43,7 +44,7 @@ void SecDialog::on_calculatePushButton_clicked()
 
     // Convert RPM to radians/sec
     double wLeft = rpmLeft * 2 * M_PI / 60.0;
-    double wRight = rpmRight * 2 * M_PI / 60.0;
+    double wRight = rpmRight * 2 * M_PI / 60.0;//M_PI ရဲ့ value ကို const အနေနဲ့ variable.h header file မာ ထည့် ထားခဲ့သည်
 
     double vLeft = wLeft * wheelRadius;
     double vRight = wRight * wheelRadius;
